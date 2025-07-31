@@ -8,6 +8,8 @@
 }
 body {
   background-color: #f5f8ff;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* shared styles */
@@ -26,14 +28,12 @@ body {
   margin: 10px 150px;
 }
 
-.logo img {
-  width: 100%;
-}
+
 .menu-cart-container {
-  gap: 3rem;
+  gap: 48px;
 }
 .menu ul {
-  gap: 3rem;
+  gap: 48px;
 }
 .menu-item {
   align-items: center;
@@ -72,7 +72,6 @@ body {
 
 .hero-banner-info-container {
   align-items: end;
-  width: 50%;
 }
 .fresh-flowers,
 .always {
@@ -84,7 +83,6 @@ body {
   font-size: 1.375rem;
 }
 .hero-banner-img-container {
-  width: 50%;
   align-items: end;
 }
 .hero-banner-description {
@@ -142,7 +140,43 @@ body {
     align-items: center;
     justify-content: center;
 }
+/* promo banner section related styles */
+.promo-banner-section{
+  margin-top:210px ;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 134px;
+}
+.img-badge-container {
+  position: relative;
+}
 
+.trusted-badge {
+  width: 286px;
+  height: 286px;
+  position: absolute; 
+  top: -130px;
+  left: 380px;
+}
+
+.promo-title{
+  font-size:3rem;
+  font-weight: bold;
+
+}
+.promo-desc{
+  color: rgba(0, 0, 0, 0.5);
+  font-size:1.375rem;
+}
+.promo-title-desc-container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 80px;
+}
+.promo-title,.promo-desc li{
+  margin-bottom: 20px;
+}
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
@@ -187,5 +221,16 @@ body {
   }
   .hero-banner-img-container img{
     width: 100%;
+    margin: 0;
+  }
+  .promo-banner-container{
+    flex-direction: column;
+
+  }
+  .trusted-badge{
+    display: none;
+  }
+  .promo-banner-section,.promo-title-desc-container{
+    margin: 41px 16px;
   }
 }
