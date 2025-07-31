@@ -116,10 +116,12 @@ body {
     margin-bottom: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    width: calc(100% - 20px);
   }
-  .hero-banner-title{
-    font-size: 1.5rem;
-  }
+  .fresh-flowers,
+.always {
+  font-size: 1.5rem;
+}
   .hero-banner-img-container{
     width: 100%;
     align-items: center;
