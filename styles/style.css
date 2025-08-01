@@ -261,7 +261,42 @@ text-align: center;
   margin: 0px;
 }
 
+/* newslater related styles */
+.newslater-container{
+  background-image: url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 533px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newslater-container h3{
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+.subscribe-btn{
+  display: flex;
+  width: 830px;
+}
+.subscribe-btn textarea{
+  width: 70%;
+  border: none;
+  height: 50px;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  
+}
 
+.subscribe-btn button{
+  width: 30%;
+  background-color: #e95a08;
+  color: white;
+  border: none;
+  
+}
 
 
 /* responsive media query */
@@ -340,5 +375,12 @@ text-align: center;
     font-size: 1.375rem;
     height: 185px;
     
+  }
+  .newslater-container{
+    width: 393px;
+    height: 276px;
+  }
+  .subscribe-btn{
+    width: 321px;
   }
 }
