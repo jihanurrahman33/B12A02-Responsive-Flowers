@@ -290,12 +290,48 @@ text-align: center;
   
 }
 
+
 .subscribe-btn button{
   width: 30%;
   background-color: #e95a08;
   color: white;
   border: none;
   
+}
+
+/* footer section related styles */
+.footer-section{
+  margin: 50px 160px;
+  display: flex;
+  gap: 110px;
+  justify-content: space-evenly;
+}
+.logo-text p{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.375rem;
+}
+
+.footer-section .menu-1 ul li{
+  margin-bottom: 26px;
+  list-style: none;
+  color: #6B7280;
+  white-space:nowrap ;
+}
+.footer-section .menu-2 ul li{
+   margin-bottom: 26px;
+  list-style: none;
+  color: #6B7280;
+  white-space:nowrap ;
+}
+.icn{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
+  
+ 
+}
+.icn img{
+  height: 36px;
 }
 
 
@@ -377,10 +413,21 @@ text-align: center;
     
   }
   .newslater-container{
-    width: 393px;
+    width: 100%;
     height: 276px;
+    margin-top: 120px;
   }
   .subscribe-btn{
     width: 321px;
+  }
+  .footer-section{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .footer-section{
+    margin-left: 0px;
+    margin-right: 10px;
+    gap: 0px;
   }
 }
